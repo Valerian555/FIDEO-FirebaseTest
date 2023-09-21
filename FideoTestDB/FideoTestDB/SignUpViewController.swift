@@ -113,26 +113,22 @@ class SignUpViewController: UIViewController {
             } else if let authResult = authResult {
                 print("Compte créé avec succès. UID de l'utilisateur : \(authResult.user.uid)")
                 
-                //modif
+                let db = Firestore.firestore()
+                let user = authResult.user
                 
-                /* Une fois le compte créé avec succès, enregistrez les données utilisateur dans Firestore.
-                 let db = Firestore.firestore()
-                 let user = authResult.user
-                 
-                 db.collection("Utilisateurs").document(user.uid).setData([
-                 "nom": nom,
-                 "prenom": prenom,
-                 "age": age,
-                 "ville": ville,
-                 // Ajoutez d'autres données utilisateur selon vos besoins
-                 ]) { error in
-                 if let error = error {
-                 print("Erreur lors de la création du document utilisateur : \(error.localizedDescription)")
-                 } else {
-                 print("Document utilisateur créé avec succès dans Firestore.")
-                 }
-                 }*/
-                
+                db.collection("user").document(user.uid).setData([
+                    "username": self.usernametextField.text!,
+                    "firstname": self.firstnameTextField.text!,
+                    "lastname": self.lastnameTextField.text!,
+                    "phoneNumber": self.phoneNumberTextField.text!,
+                    
+                ]) { error in
+                    if let error = error {
+                        print("Erreur lors de la création du document utilisateur : \(error.localizedDescription)")
+                    } else {
+                        print("Document utilisateur créé avec succès dans Firestore.")
+                    }
+                }
             }
         }
         
