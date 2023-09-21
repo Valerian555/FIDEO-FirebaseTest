@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBYbqQ-OJjyEBax4UuHUjHq_yio4kGVy0s</string>
+	<key>GCM_SENDER_ID</key>
+	<string>897379553512</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>be.valerianpt.FideoTestDB</string>
+	<key>PROJECT_ID</key>
+	<string>testfb-30570</string>
+	<key>STORAGE_BUCKET</key>
+	<string>testfb-30570.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:897379553512:ios:3286d7e0cbbc0da102395d</string>
+	<key>DATABASE_URL</key>
+	<string>https://testfb-30570-default-rtdb.europe-west1.firebasedatabase.app</string>
+</dict>
+</plist>
